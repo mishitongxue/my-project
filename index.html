@@ -26,14 +26,14 @@
             position: absolute;
             top: 300px;
             left: 33%;
-            /* transform: translate(-50%,-50%); */
+             transform: translate(-50%,-50%); 
         }
         .no{
             background-color: #c40;
             position: absolute;
             top: 300px;
             left: 66%;
-            /* transform: translate(-50%,-50%); */
+             transform: translate(-50%,-50%); 
         }
     </style>
 </head>
@@ -48,17 +48,17 @@
         document.getElementById('yes').onclick = function () {
             alert('我也喜欢你~');
         };
-//        document.getElementById('no').onclick = function () {
-//            alert('服气');
-//        };
+        document.getElementById('no').onclick = function () {
+            alert('不喜欢也得喜欢!!!!!');
+        };
 
         
         
 
 
         $('#no').click(function () {
-            var right_ = Math.round(Math.random() * (screen.availWidth - 200)) ;
-            var top_ = Math.round(Math.random() * (screen.availHeight - 200)) ;
+            var right_ = Math.round(Math.random() * (screen.availWidth - 200)) + 50;
+            var top_ = Math.round(Math.random() * (screen.availHeight - 200)) +50;
             // console.log(screen.availWidth);
             // console.log(screen.availHeight);
             // console.log(right_);
@@ -70,3 +70,4 @@
     </script>
 </body>
 </html>
+        
